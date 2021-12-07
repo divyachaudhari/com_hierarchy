@@ -13,6 +13,6 @@ CREATE TABLE IF NOT EXISTS `#__hierarchy_users` (
 `created_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
 `modified_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
 `state` INT(11)  NOT NULL,
-`note` TEXT NOT NULL,
+`note` TEXT DEFAULT NULL,
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;
